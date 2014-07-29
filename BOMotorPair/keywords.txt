@@ -1,0 +1,19 @@
+BOMotorPair	KEYWORD1
+M1_pin1	KEYWORD2
+M1_pin2	KEYWORD2
+M1_PWMPin	KEYWORD2
+M2_pin1	KEYWORD2
+M2_pin2	KEYWORD2
+M2_PWMPin	KEYWORD2
+M1_Speed	KEYWORD2
+M2_Speed	KEYWORD2
+moveDirection	KEYWORD2
+
+SetMoveDirection	KEYWORD2
+SetMoveSpeed	KEYWORD2
+SetTurnSpeed	KEYWORD2
+SetWheelSpeedDifferential	KEYWORD2
+Move	KEYWORD2
+Stop	KEYWORD2
+Accelerate	KEYWORD2
+MoveWheelsIndependently	KEYWORD2

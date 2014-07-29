@@ -1,0 +1,7 @@
+MPU6050	KEYWORD1
+gyro_output	KEYWORD2
+accel_output	KEYWORD2
+    
+Update	KEYWORD2
+GetGyroReading	KEYWORD2
+GetAccelerometerReading	KEYWORD2

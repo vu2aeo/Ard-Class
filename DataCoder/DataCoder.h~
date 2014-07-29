@@ -1,0 +1,39 @@
+//This code was written by vu2aeo and is free to distribute or modify
+//I am not responsible for any damage caused due to this code
+//If you distribute this code, you must do it for free
+#include "VirtualWire.h"
+#ifndef DATACODER_H
+#define DATACODER_H
+
+#define RF_DATA_ARRAY_SIZE 4 //The number of elements to be held in the array
+
+#define RF_DATA_DECIMAL_PLACES 1//The number of decimal places that will be encoded
+
+#define UNION_EXPANSION_FACTOR 2//The number of bytes occupied by each element of the encoded RFData packet
+
+
+union RFData
+{
+    int dataBox[RF_DATA_ARRAY_SIZE];//2 bytes each. In Arduino environment, int is 2 bytes. Change this to unsigned int if you want to only positive numbers upto 65535 in size
+
+    char s[RF_DATA_ARRAY_SIZE * UNION_EXPANSION_FACTOR];//each char is 1 byte so we need 2 chars for
+                                                        //each dataBox[] element
+};
+
+void EncodeRFData(float* outArray, RFData& outData);
+
+void TransmitRFData(RFData outDataSeq, RFData& inDataSeq);//Dummy function for debugging purposes
+
+void TransmitRFData(RFData outDataSeq);
+
+void DecodeRFData(float* inArray, RFData inDataSeq);
+
+void SetupRFDataTxnLink(int transmit_pin, int baudRate);
+
+void SetupRFDataRxnLink(int rx_pin, int baudRate);
+
+bool RFLinkDataAvailable(uint8_t* buf, uint8_t* buflen);
+
+void SetupRFDataRxnLink(int receive_pin, int baudRate);
+
+#endif // DATACODER_H
