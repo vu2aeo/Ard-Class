@@ -1,0 +1,32 @@
+#ifndef QTTALKER_H
+#define QTTALKER_H
+
+#define TX_PKT_SIZE 5
+#define RX_PKT_SIZE 2
+
+class QtTalker
+{
+private:
+
+    int connSpeed;
+
+    bool newDataAvailable;
+
+    float inPkt[RX_PKT_SIZE];
+
+public:
+
+    QtTalker(int speed);
+
+    ~QtTalker();
+
+    void SendDataPacketToQt(float* data);
+
+    bool IsNewDataAvailable();
+
+    void ReceiveDataFromQt();
+
+
+};
+
+#endif // QTTALKER_H
