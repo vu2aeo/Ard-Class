@@ -1,0 +1,6 @@
+MY_MPU_6050	KEYWORD1
+    
+Update	KEYWORD2
+Initialise	KEYWORD2
+GetGyroReading	KEYWORD2
+GetAccelerometerReading	KEYWORD2

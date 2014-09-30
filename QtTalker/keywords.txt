@@ -1,0 +1,6 @@
+QtTalker	KEYWORD1
+    
+Connect	KEYWORD2
+SendDataPacketToQt	KEYWORD2
+NewDataAvailable	KEYWORD2
+GetIncomingData	KEYWORD2

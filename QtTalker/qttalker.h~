@@ -1,7 +1,7 @@
 #ifndef QTTALKER_H
 #define QTTALKER_H
 
-#define TX_PKT_SIZE 2
+#define TX_PKT_SIZE 6
 #define RX_PKT_SIZE 3
 
 #include <Arduino.h>
@@ -16,7 +16,7 @@ private:
 
 public:
 
-    QtTalker(unsigned int);
+    QtTalker(unsigned long);
 
     ~QtTalker();
     
