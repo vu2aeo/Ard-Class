@@ -1,0 +1,6 @@
+CustomServo KEYWORD1
+SetTurnDirection    KEYWORD2
+Turn    KEYWORD2
+Stop    KEYWORD2
+GoToAngle   KEYWORD2
+SetTurnSpeed    KEYWORD2
